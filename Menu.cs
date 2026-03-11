@@ -55,6 +55,8 @@ namespace IKR_Dikaya
         {
             if (Autorizaciya.sotrRole == "Администратор")
             {
+                Goods_Form goods_form = new Goods_Form();
+                goods_form.ShowDialog();
             }
             if (Autorizaciya.sotrRole == "Продавец")
             {
