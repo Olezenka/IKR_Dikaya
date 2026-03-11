@@ -78,11 +78,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SoldItem.cs">
+    <Compile Include="SoldItem_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SoldItem.Designer.cs">
-      <DependentUpon>SoldItem.cs</DependentUpon>
+    <Compile Include="SoldItem_Form.Designer.cs">
+      <DependentUpon>SoldItem_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workers_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workers_Form.Designer.cs">
+      <DependentUpon>Workers_Form.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Autorizaciya.resx">
       <DependentUpon>Autorizaciya.cs</DependentUpon>
@@ -100,11 +106,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SoldItem.resx">
-      <DependentUpon>SoldItem.cs</DependentUpon>
+    <EmbeddedResource Include="SoldItem_Form.resx">
+      <DependentUpon>SoldItem_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workers_Form.resx">
+      <DependentUpon>Workers_Form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\IKR_Dikaya.FolderModel.Sold_item.datasource" />
+    <None Include="Properties\DataSources\IKR_Dikaya.FolderModel.Workers.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IKR_Dikaya
 {
-    public partial class SoldItem : Form
+    public partial class SoldItem_Form : Form
     {
-        public SoldItem()
+        public SoldItem_Form()
         {
             InitializeComponent();
         }

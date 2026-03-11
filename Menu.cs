@@ -53,8 +53,19 @@ namespace IKR_Dikaya
 
         private void buttonMenu_Click(object sender, EventArgs e)
         {
-            SoldItem soldItem = new SoldItem();
-            soldItem.ShowDialog();
+            if (Autorizaciya.sotrRole == "Администратор")
+            {
+            }
+            if (Autorizaciya.sotrRole == "Продавец")
+            {
+                SoldItem_Form soldItem = new SoldItem_Form();
+                soldItem.ShowDialog();
+            }
+            if (Autorizaciya.sotrRole == "Директор")
+            {
+                Workers_Form workers_Form = new Workers_Form();
+                workers_Form.ShowDialog();
+            }
         }
     }
 }

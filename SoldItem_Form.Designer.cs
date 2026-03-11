@@ -1,6 +1,6 @@
 ﻿namespace IKR_Dikaya
 {
-    partial class SoldItem
+    partial class SoldItem_Form
     {
         /// <summary>
         /// Required designer variable.
