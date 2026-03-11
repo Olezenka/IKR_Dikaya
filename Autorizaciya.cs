@@ -14,8 +14,8 @@ namespace IKR_Dikaya
     public partial class Autorizaciya : Form
     {
         public static Model1 DB = new Model1();
-        public string sotrName = "";
-        public string sotrRole = "";
+        public static string sotrName = "";
+        public static string sotrRole = "";
         public Autorizaciya()
         {
             InitializeComponent();
@@ -38,7 +38,9 @@ namespace IKR_Dikaya
                     sotrRole = worker.Role;
                     if (sotrRole == "Administrator")
                     {
-                        
+                        Menu menu = new Menu();
+                        menu.Visible = true;
+                        this.Visible = false;
                     }
                 }
                 else
