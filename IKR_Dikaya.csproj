@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddWorkers_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWorkers_Form.Designer.cs">
+      <DependentUpon>AddWorkers_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="FolderModel\Defect.cs" />
     <Compile Include="FolderModel\Goods.cs" />
     <Compile Include="FolderModel\Goods_at_Points.cs" />
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="Autorizaciya.Designer.cs">
       <DependentUpon>Autorizaciya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goods.Designer.cs">
+      <DependentUpon>Goods.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -90,8 +102,14 @@
     <Compile Include="Workers_Form.Designer.cs">
       <DependentUpon>Workers_Form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddWorkers_Form.resx">
+      <DependentUpon>AddWorkers_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Autorizaciya.resx">
       <DependentUpon>Autorizaciya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goods.resx">
+      <DependentUpon>Goods.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -113,6 +131,7 @@
       <DependentUpon>Workers_Form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\IKR_Dikaya.FolderModel.Roles.datasource" />
     <None Include="Properties\DataSources\IKR_Dikaya.FolderModel.Sold_item.datasource" />
     <None Include="Properties\DataSources\IKR_Dikaya.FolderModel.Workers.datasource" />
     <None Include="Properties\Settings.settings">

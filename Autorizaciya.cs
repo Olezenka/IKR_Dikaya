@@ -36,12 +36,9 @@ namespace IKR_Dikaya
                 {
                     sotrName = worker.First_Name;
                     sotrRole = worker.Role;
-                    if (sotrRole == "Administrator")
-                    {
-                        Menu menu = new Menu();
-                        menu.Visible = true;
-                        this.Visible = false;
-                    }
+                    Menu menu = new Menu();
+                    menu.Visible = true;
+                    this.Visible = false;
                 }
                 else
                 {
@@ -49,6 +46,11 @@ namespace IKR_Dikaya
                     return;
                 }
             }
+        }
+
+        private void Autorizaciya_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -109,7 +109,7 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // Autorizaciya
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,8 +123,9 @@
             this.Controls.Add(this.panel1);
             this.MaximumSize = new System.Drawing.Size(383, 415);
             this.MinimumSize = new System.Drawing.Size(383, 415);
-            this.Name = "Form1";
+            this.Name = "Autorizaciya";
             this.Text = "Авторизация";
+            this.Load += new System.EventHandler(this.Autorizaciya_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

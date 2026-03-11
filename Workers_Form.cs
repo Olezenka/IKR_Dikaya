@@ -47,5 +47,12 @@ namespace IKR_Dikaya
             Autorizaciya.DB.SaveChanges();
             LoadData();
         }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            AddWorkers_Form addWorkers_Form = new AddWorkers_Form();
+            addWorkers_Form.ShowDialog();
+            LoadData();
+        }
     }
 }
