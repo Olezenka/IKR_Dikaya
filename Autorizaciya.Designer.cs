@@ -1,6 +1,6 @@
 ﻿namespace IKR_Dikaya
 {
-    partial class Form1
+    partial class Autorizaciya
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -60,7 +60,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(25, 141);
+            this.label2.Location = new System.Drawing.Point(25, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 33);
             this.label2.TabIndex = 2;
@@ -81,7 +81,7 @@
             // 
             this.textBoxLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.textBoxLogin.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxLogin.Location = new System.Drawing.Point(135, 141);
+            this.textBoxLogin.Location = new System.Drawing.Point(135, 131);
             this.textBoxLogin.Multiline = true;
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(199, 33);
@@ -107,6 +107,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Войти";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -123,7 +124,7 @@
             this.MaximumSize = new System.Drawing.Size(383, 415);
             this.MinimumSize = new System.Drawing.Size(383, 415);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Авторизация";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
