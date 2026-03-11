@@ -44,12 +44,13 @@ namespace IKR_Dikaya
         {
             flowLayoutPanel1.Controls.Clear();
             SetTextlabel();
+
             for (int i = 0; i < 6; i++)
             {
-                if (goods.Count > i)
+                int currentIndex = SvipeID + i;
+                if (currentIndex < goods.Count)
                 {
-                    int count = 1 + SvipeID;
-                    GoodsTitle tile = new GoodsTitle(goods[count]);
+                    GoodsTitle tile = new GoodsTitle(goods[currentIndex]);
                     flowLayoutPanel1.Controls.Add(tile);
                 }
             }
@@ -83,7 +84,8 @@ namespace IKR_Dikaya
 
         private void Goods_Form_Load(object sender, EventArgs e)
         {
-
+            labelFIO.Text = Autorizaciya.sotrName;
+            labelRole.Text = Autorizaciya.sotrRole;
         }
 
         private void button1_Click(object sender, EventArgs e)

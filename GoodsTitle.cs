@@ -21,18 +21,28 @@ namespace IKR_Dikaya
             _goods = goods;
             labelId.Text = "ID: " + _goods.ID.ToString();
             labelName.Text = _goods.Name;
+            pictureBox1.Image = null;
+
             try
             {
-                if (_goods.Image != null)
+                if (_goods.Image != null && _goods.Image.Length > 0)
                 {
-                    pictureBox1.Image = Image.FromFile(_goods.Image.ToString());
+                    using (var ms = new System.IO.MemoryStream(_goods.Image))
+                    {
+                        pictureBox1.Image = Image.FromStream(ms);
+                    }
+                }
+                else
+                {
+                    pictureBox1.Image = IKR_Dikaya.Properties.Resources.Default;
                 }
             }
-            catch 
+            catch
             {
                 pictureBox1.Image = IKR_Dikaya.Properties.Resources.Default;
             }
         }
+
         public GoodsTitle(Goods goods)
         {
             InitializeComponent();
