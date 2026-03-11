@@ -29,16 +29,19 @@ namespace IKR_Dikaya
             {
                 buttonMenu.Text = "Товары";
                 labelRole.Text = "Администратор";
+                Autorizaciya.sotrRole = "Администратор";
             }
             if (role == "Seller")
             {
                 buttonMenu.Text = "Проданный товар";
                 labelRole.Text = "Продавец";
+                Autorizaciya.sotrRole = "Продавец";
             }
             if (role == "Director")
             {
                 buttonMenu.Text = "Сотрудники";
                 labelRole.Text = "Директор";
+                Autorizaciya.sotrRole = "Директор";
             }
 
         }
@@ -50,7 +53,8 @@ namespace IKR_Dikaya
 
         private void buttonMenu_Click(object sender, EventArgs e)
         {
-
+            SoldItem soldItem = new SoldItem();
+            soldItem.ShowDialog();
         }
     }
 }
